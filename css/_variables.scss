@@ -1,0 +1,17 @@
+body {
+	background: #fff;
+	color: #000;
+	font-size: 1em; /* default: 16px = 1em */
+	font-family: sans-serif;
+	letter-spacing: 0;
+	font-weight: normal;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 640px) {}
