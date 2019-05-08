@@ -1,2 +1,2 @@
 # html5-boilerplate
-HTML5 / SASS Kickstart
+HTML5 / SCSS Kickstart

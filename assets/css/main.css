@@ -1,3 +1,22 @@
+/* Color */
+.reset-button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none; }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -390,7 +409,7 @@ template {
   display: none; }
 
 body {
-  background: #fff;
+  background-color: #fff;
   color: #000;
   font-size: 1em;
   /* default: 16px = 1em */
@@ -402,8 +421,106 @@ img {
   max-width: 100%;
   display: block; }
 
-#wrap {
+/* Media Queries */
+.container {
   margin: 0 auto;
   width: 100%; }
 
-/* Media Queries */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/*! Typebase.less v0.1.0 | MIT License */
+/* Setup */
+html {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-align: left; }
+
+/* Copy & Lists */
+p {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0; }
+
+ul,
+ol {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+
+ul li,
+ol li {
+  line-height: 1.5rem; }
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+blockquote {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1;
+  text-align: center; }
+
+h1 {
+  font-size: 3rem;
+  margin-top: 3rem; }
+
+h2 {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-top: 3rem; }
+
+h3 {
+  font-size: 1.5rem; }
+
+h4, h5 {
+  font-size: 1rem; }
+
+/* Tables */
+table {
+  margin-top: 1.5rem;
+  border-spacing: 0px;
+  border-collapse: collapse; }
+
+table td,
+table th {
+  padding: 0;
+  line-height: 33px; }
+
+/* Code blocks */
+code {
+  vertical-align: bottom; }
+
+/* Leading paragraph text */
+.lead {
+  font-size: 1.414rem; }
+
+/* Hug the block above you */
+.hug {
+  margin-top: 0; }
+
+.cap {
+  text-transform: capitalize; }
+
+.smallprint {
+  font-size: .8rem;
+  line-height: 1.5; }
+
+strong {
+  font-weight: bold; }
