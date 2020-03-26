@@ -1,13 +1,42 @@
-@mixin opacity($value){
+@mixin opacity($value) {
   opacity: $value;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$value*100+")"; /* IE 8 */
-  filter: alpha(opacity=$value*100); /* IE 5-7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + $value * 100+")"; /* IE 8 */
+  filter: alpha(opacity=$value * 100); /* IE 5-7 */
 }
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
 }
 
+// responsive
+
+// small devices
+@mixin sm {
+  @media (min-width: #{$screen-small}) {
+    @content;
+  }
+}
+
+// medium devices
+@mixin md {
+  @media (min-width: #{$screen-medium}) {
+    @content;
+  }
+}
+
+// large devices
+@mixin lg {
+  @media (min-width: #{$screen-large}) {
+    @content;
+  }
+}
+
+// huge devices
+@mixin hg {
+  @media (min-width: #{$screen-huge}) {
+    @content;
+  }
+}
