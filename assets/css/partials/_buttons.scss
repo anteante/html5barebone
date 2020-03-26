@@ -1,0 +1,26 @@
+button {
+  display: inline;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 2.2rem;
+  letter-spacing: 0;
+  font-weight: normal;
+  line-height: 1;
+}
+
+button:hover,
+button:focus {
+  background: transparent;
+}
+
+button:focus {
+  outline: none;
+  outline-offset: 0;
+}
