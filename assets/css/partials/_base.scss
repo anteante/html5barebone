@@ -1,17 +1,36 @@
-body {
-	background-color: $bgco;
-	color: $prim;
-	font-size: 1em; /* default: 16px = 1em */
-	font-family: sans-serif;
-	letter-spacing: 0;
-	font-weight: normal;
+html {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  text-rendering: optimizeLegibility;
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  background-color: $bgco;
+  color: $prim;
+}
+
+// links
+
+a {
+  color: $prim;
+  text-decoration: none;
+}
+
+// images
 
 img {
-	max-width: 100%;
-	display: block;
+  max-width: 100%;
+  display: block;
 }
-
-/* Media Queries */
-
-@media screen and (min-width: 640px) {}
