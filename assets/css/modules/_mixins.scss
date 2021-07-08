@@ -11,30 +11,26 @@
   border-radius: $radius;
 }
 
-// responsive
+// BREAKPOINTS
 
-// small devices
 @mixin sm {
   @media (min-width: #{$screen-small}) {
     @content;
   }
 }
 
-// medium devices
 @mixin md {
   @media (min-width: #{$screen-medium}) {
     @content;
   }
 }
 
-// large devices
 @mixin lg {
   @media (min-width: #{$screen-large}) {
     @content;
   }
 }
 
-// huge devices
 @mixin hg {
   @media (min-width: #{$screen-huge}) {
     @content;
