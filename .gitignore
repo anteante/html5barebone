@@ -5,3 +5,4 @@ config.codekit*
 .sass*/
 _develop/
 _bu/
+.nova
