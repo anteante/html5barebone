@@ -2,9 +2,8 @@
   "actions" : {
     "run" : {
       "enabled" : true,
-      "script" : "# Watch main.scss and compile it\nnode-sass -w assets\/css\/main.scss assets\/css\/main.css | \n# start a server, watching all files\nbrowser-sync start --server --watch\n# same as above, shorthand\nbrowser-sync -w"
+      "script" : "# Watch main.scss and compile it\nsass -w assets\/css\/main.scss assets\/css\/main.css --style compressed | \n# start a server, watching all files\nbrowser-sync start --server --watch --no-notify"
     }
   },
-  "identifier" : "835E6BA9-80B1-4EEE-8ED5-FD49350029D5",
   "openLogOnRun" : "start"
 }
