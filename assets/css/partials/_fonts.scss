@@ -1,9 +1,16 @@
 // @font-face {
-//   font-family: 'webfont';
-//   src: url('/path/to/webfont.eot'); /* IE9 Compat Modes */
-//   src: url('/path/to/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-//        url('/path/to/webfont.woff') format('woff'),
-//        url('/path/to/webfont.ttf') format('truetype'); /* Safari, Android, iOS */
-//   font-weight: 400;
-//   font-style: normal;
+// 	font-display: swap;
+// 	font-family: "Fontname Bold";
+// 	src: url("/assets/fonts/Fontname-Bold.woff2") format("woff2"),
+// 		url("/assets/fonts/Fontname-Bold.woff") format("woff");
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+// @font-face {
+// 	font-display: swap;
+// 	font-family: "Fontname Regular";
+// 	src: url("/assets/fonts/Fontname-Regular.woff2") format("woff2"),
+// 		url("/assets/fonts/Fontname-Regular.woff") format("woff");
+// 	font-weight: normal;
+// 	font-style: normal;
 // }
