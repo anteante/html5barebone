@@ -1,13 +1,17 @@
 @import "modules/variables";
 @import "modules/mixins";
 
+// Base
 @import "partials/resets";
 @import "partials/base";
+@import "partials/utility";
+
+// Elements
+@import "partials/typography";
+@import "partials/nav";
 @import "partials/buttons";
 @import "partials/fonts";
 @import "partials/layout";
-@import "partials/nav";
-@import "partials/typography";
-@import "partials/utility";
 
+// Sections
 @import "sections/index";
