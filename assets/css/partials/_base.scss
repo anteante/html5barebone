@@ -4,14 +4,14 @@ body {
 }
 
 html {
-  background-color: $bgco;
-  color: $prim;
+  background-color: var(--color-back);
+  color: var(--color-prim);
 }
 
 // LINKS
 
 a {
-  color: $prim;
+  color: var(--color-prim);
   text-decoration: none;
 }
 

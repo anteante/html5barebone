@@ -1,38 +1,37 @@
-@mixin opacity($value) {
-  opacity: $value;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + $value * 100+")"; /* IE 8 */
-  filter: alpha(opacity=$value * 100); /* IE 5-7 */
-}
-
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-  border-radius: $radius;
-}
-
 // BREAKPOINTS
 
+@mixin sm-max {
+  @media screen and (max-width: #{var(--screen-small)}) {
+    @content;
+  }
+}
+
 @mixin sm {
-  @media (min-width: #{$screen-small}) {
+  @media (min-width: #{var(--screen-small)}) {
+    @content;
+  }
+}
+
+@mixin md-max {
+  @media screen and (max-width: #{var(--screen-medium)}) {
     @content;
   }
 }
 
 @mixin md {
-  @media (min-width: #{$screen-medium}) {
+  @media (min-width: #{var(screen-medium)}) {
     @content;
   }
 }
 
 @mixin lg {
-  @media (min-width: #{$screen-large}) {
+  @media (min-width: #{var(screen-large)}) {
     @content;
   }
 }
 
 @mixin hg {
-  @media (min-width: #{$screen-huge}) {
+  @media (min-width: #{var(screen-huge)}) {
     @content;
   }
 }
